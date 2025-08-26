@@ -1,0 +1,112 @@
+Print Working Directory,pwd
+List the current directory,ls
+List current directory with permissions,ls -l
+List current directory including hidden files,ls -la
+Change directory,cd
+Go up one directory,cd ..
+Go to root directory,cd /
+Go to home directory,cd ~
+Make a new directory,mkdir
+Remove a directory,rmdir
+Copy a file,cp
+Move or rename a file,mv
+Remove a file,rm
+Create a new file with text,echo "text" > file
+Append text to a file,echo "text" >> file
+Count lines in a file,wc -l filename
+Count words in a file,wc -w filename
+Count characters in a file,wc -c filename
+View the beginning of a file,head filename
+View the end of a file,tail filename
+Follow a file in real-time,tail -f filename
+Search for a pattern in a file,grep "pattern" filename
+Recursive search for a pattern,grep -r "pattern" .
+Case-insensitive grep,grep -i "pattern" filename
+List processes,ps aux
+Monitor processes in real-time,top
+Monitor processes in real-time (better interface),htop
+Kill a process,kill PID
+Force kill a process,kill -9 PID
+Show disk usage,df -h
+Show directory size,du -sh
+Show free memory,free -h
+Display system info,uname -a
+Show current user,whoami
+List groups user belongs to,groups
+Switch user,su - username
+Elevate privileges,sudo command
+Update package list,sudo apt update
+Upgrade installed packages,sudo apt upgrade
+Install a package,sudo apt install package
+Remove a package,sudo apt remove package
+Search for a package,apt search package
+Show network interfaces,ip a
+Test connectivity,ping host
+Download a file,wget URL
+Fetch web content,curl URL
+Show open ports,netstat -tuln
+Show command manual,man command
+Redirect output to a file,command > file
+Append output to a file,command >> file
+Pipe commands together,command1 | command2
+List hidden files,ls -a
+List human-readable sizes,ls -lh
+Sort files by modification time,ls -lt
+Show last logged in users,last
+Show logged-in users,who
+Clear terminal,clear
+Print environment variables,env
+Show a single variable,echo $VARIABLE
+Set an environment variable,export VARIABLE=value
+View file type,file filename
+Compare two files,diff file1 file2
+Find files in current directory,find . -name "filename"
+Case-insensitive find,find . -iname "filename"
+Find directories only,find . -type d
+Find files only,find . -type f
+Find files and execute command,find . -name "*.txt" -exec grep "pattern" {} \;
+Use xargs with find,find . -name "*.txt" | xargs grep "pattern"
+Compress files into tar,tar -cvf archive.tar files
+Extract tar archive,tar -xvf archive.tar
+Compress with gzip,gzip filename
+Extract gzip file,gunzip filename.gz
+Check file permissions,ls -l
+Change file permissions,chmod 755 filename
+Change file owner,chown user:group filename
+Display calendar,cal
+Show current date,date
+Create symbolic link,ln -s target link_name
+Show logged-in users,w
+Check disk inode usage,df -i
+Check memory and swap,free -m
+Show last commands history,history
+Repeat last command,!!
+Search history,history | grep "command"
+Suspend a process,Ctrl + Z
+Resume a background process,fg
+Run command in background,command &
+Check background jobs,jobs
+Rename a file,mv oldname newname
+Open file in nano,nano filename
+Open file in vim,vim filename
+Search file contents recursively,grep -r "pattern" .
+Count number of occurrences in file,grep -c "pattern" filename
+Show first n lines,head -n 20 filename
+Show last n lines,tail -n 20 filename
+Display manual page section,man 5 passwd
+Shutdown system immediately,sudo shutdown now
+Reboot system,sudo reboot
+Cancel scheduled shutdown,sudo shutdown -c
+Suspend system,systemctl suspend
+Hibernate system,systemctl hibernate
+Check listening ports,lsof -i
+Check file disk usage by folder,du -h --max-depth=1
+Display CPU info,lscpu
+Display memory info,cat /proc/meminfo
+Show block devices,lsblk
+Check mounted filesystems,mount
+Display users currently logged in,who
+Show file differences visually,meld file1 file2
+Search commands in PATH,which command
+Locate files quickly,locate filename
+Update locate database,sudo updatedb
