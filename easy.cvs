@@ -1,0 +1,48 @@
+Print working directory,pwd
+List directory contents,ls
+List directory contents with details,ls -l
+List all files including hidden,ls -a
+Change directory,cd
+Go up one directory level,cd ..
+Go to home directory,cd ~
+Create a new directory,mkdir
+Remove an empty directory,rmdir
+Remove a file,rm
+Copy a file,cp
+Move or rename a file,mv
+Create an empty file,touch
+Print text to the terminal,echo
+Write text to a file (overwrite),echo > file
+Append text to a file,echo >> file
+View file contents,cat
+View file contents page by page,less
+Show manual/help for a command,man
+Show current logged-in user,whoami
+Search for a pattern in a file,grep pattern file
+Count lines, words, and characters,wc file
+Count only lines,wc -l file
+Count only words,wc -w file
+Count only characters,wc -c file
+Sort file contents,sort file
+Compare two files line by line,diff file1 file2
+Search recursively for a pattern in files,grep -r pattern folder
+Ignore case when searching with grep,grep -i pattern file
+Count pattern occurrences in file,grep -c pattern file
+Pipe output from one command to another,|
+Redirect output to a file,>
+Append output to a file,>>
+Display first N lines of a file,head -n N file
+Display last N lines of a file,tail -n N file
+Follow a file in real-time (logs),tail -f file
+Show running processes,ps aux
+Show top processes dynamically,top
+Kill a process by PID,kill PID
+Display disk usage,df -h
+Display directory sizes,du -sh folder
+Find files by name,find /path -name "filename"
+Show last commands run,history
+Clear terminal,clear
+Print environment variables,env
+Print current user id,id
+Display memory usage,free -h
+Check open network ports,ss -tuln

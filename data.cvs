@@ -61,7 +61,7 @@ Set an environment variable,export VARIABLE=value
 View file type,file filename
 Compare two files,diff file1 file2
 Find files in current directory,find . -name "filename"
-Case-insensitive find,find . -iname "filename"
+Case-insensitive find from current problem,find . -iname filename
 Find directories only,find . -type d
 Find files only,find . -type f
 Find files and execute command,find . -name "*.txt" -exec grep "pattern" {} \;
@@ -70,7 +70,6 @@ Compress files into tar,tar -cvf archive.tar files
 Extract tar archive,tar -xvf archive.tar
 Compress with gzip,gzip filename
 Extract gzip file,gunzip filename.gz
-Check file permissions,ls -l
 Change file permissions,chmod 755 filename
 Change file owner,chown user:group filename
 Display calendar,cal
@@ -81,7 +80,7 @@ Check disk inode usage,df -i
 Check memory and swap,free -m
 Show last commands history,history
 Repeat last command,!!
-Search history,history | grep "command"
+Search history for a command,history | grep "command"
 Suspend a process,Ctrl + Z
 Resume a background process,fg
 Run command in background,command &
@@ -91,11 +90,11 @@ Open file in nano,nano filename
 Open file in vim,vim filename
 Search file contents recursively,grep -r "pattern" .
 Count number of occurrences in file,grep -c "pattern" filename
-Show first n lines,head -n 20 filename
-Show last n lines,tail -n 20 filename
-Display manual page section,man 5 passwd
+Show first n lines,head -n n filename
+Show last 20 lines,tail -n 20 filename
+Display manual page for a command,man command
 Shutdown system immediately,sudo shutdown now
-Reboot system,sudo reboot
+Reboot system,reboot
 Cancel scheduled shutdown,sudo shutdown -c
 Suspend system,systemctl suspend
 Hibernate system,systemctl hibernate
@@ -106,7 +105,10 @@ Display memory info,cat /proc/meminfo
 Show block devices,lsblk
 Check mounted filesystems,mount
 Display users currently logged in,who
-Show file differences visually,meld file1 file2
+Show file differences,diff file1 file2
+Show directory differences,diff -r directory1 directory2
 Search commands in PATH,which command
 Locate files quickly,locate filename
 Update locate database,sudo updatedb
+Replacing a string in a file to another string,sed -i s/find/replace filename
+Replacing a string in a file without saving,sed s/find/replace filename
